@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="clone, tailwindcss, 'marn htet zan'">
+		<meta name="author" content="Marn Htet Zan">
+		<meta name="description" content="Image card clone from tailwind website">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
+		<script>
+			tailwind.config = {
+			theme: {
+				container: {
+					center: true,
+					padding: '1.5rem',
+				},
+				screens: {
+					'3xl': {"max": "2140px"},
+					'2xl': {"max": "1440px"},
+					'xl': {"max": "1080px"},
+					'lg': {"max": "992px"},
+					'md': {"max": "768px"},
+					'sm': {"max": "640px"},
+					'xs': {"max": "568px"},
+				},
+				fontFamily: {
+					lora: ['Lora', 'serif'],
+					mont: ['Montserrat', 'sans-serif']
+				},
+				borderWidth: {
+					DEFAULT: '1px',
+					'none': '0px',
+					'1': '1px',
+					'2': '2px',
+					'3': '3px',
+					'4': '4px',
+					'5': '5px',
+					'6': '6px',
+					'7': '7px',
+					'8': '8px',
+					'9': '9px',
+					'10': '10px',
+				},
+				outlineWidth: {
+					'0': '0px',
+					'1': '1px',
+					'2': '2px',
+					'3': '3px',
+					'4': '4px',
+					'5': '5px',
+					'6': '6px',
+					'7': '7px',
+					'8': '8px',
+					'9': '9px',
+					'10': '10px',
+				},
+			}
+		}
+		</script>
+		<style type="text/tailwindcss">
+		</style>
+		<title>Housing</title>
+	</head>
+
+	<body>
+		<main class="px-8 py-16 flex lg:flex-col lg:justify-start lg:gap-10 lg:items-start items-center justify-center gap-20">
+			<section class="basis-1/2 max-w-[625px]">
+				<div class="text-slate-500 font-normal text-lg">
+					Entire House
+				</div>
+				<div class="text-black text-4xl font-medium">
+					Beach House in Collingwood
+				</div>
+				<div class="mt-4 flex items-center gap-16">
+					<div class=" star text-lg text-blue-600 flex items-center gap-1">
+						<svg width="24" height="24" fill="none" aria-hidden="true" class="mr-1 stroke-current dark:stroke-indigo-500">
+							<path d="m12 5 2 5h5l-4 4 2.103 5L12 16l-5.103 3L9 14l-4-4h5l2-5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+						<p>
+							4.89
+							<span class="text-gray-400">(128)</span>
+						</p>
+					</div>
+					<div class="flex items-center gap-1">
+						<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-1 text-slate-400 dark:text-slate-500" aria-hidden="true">
+							<path d="M18 11.034C18 14.897 12 19 12 19s-6-4.103-6-7.966C6 7.655 8.819 5 12 5s6 2.655 6 6.034Z"></path>
+							<path d="M14 11a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"></path>
+						</svg>
+						<p class="text-slate-500">Collingwood, Ontanto</p>
+					</div>
+				</div>
+				<button type="button" class="block my-8 bg-blue-600 text-white rounded-lg border-none py-3 px-3 font-medium text-xl hover:bg-blue-700">Check availability</button>
+				<div class="details">
+					<p class="text-slate-400 text-xl font-normal">
+						This sunny and spacious room is for those traveling light and looking for a comfy and cosy place to lay their head for a night or two. This beach house sits in a vibrant neighborhood littered with cafes, pubs, restaurants and supermarkets and is close to all the major attractions such as Edinburgh Castle and Arthur's Seat.
+					</p>
+				</div>
+			</section>
+			<section class="basis-1/2 grid grid-cols-2 gap-6 lg:grid-cols-4 lg:gap-3">
+				<img src="./Images/1.jpg" alt="House" class="w-full col-span-2 lg:col-span-2 lg:h-60 sm:col-span-full rounded-2xl object-cover object-center" loading="lazy">
+				<img src="./Images/2.jpg" alt="House" class="w-full h-60 col-span-1 rounded-2xl object-cover object-center sm:hidden" loading="lazy">
+				<img src="./Images/3.jpg" alt="House" class="w-full h-60 col-span-1 rounded-2xl object-cover object-center sm:hidden" loading="lazy">
+			</section>
+		</main>
+	</body>
+
+</html>
